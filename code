@@ -1,0 +1,6 @@
+function remove_image_zoom_support() {
+    remove_theme_support( 'wc-product-gallery-zoom' );
+	remove_theme_support( 'wc-product-gallery-lightbox' );
+    remove_theme_support( 'wc-product-gallery-slider' );
+}
+add_action( 'wp', 'remove_image_zoom_support', 100 );
